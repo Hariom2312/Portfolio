@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="info w-fit flex flex-col items-center justify-center gap-3 sm:gap-2">
             <h2
               data-aos="fade-up"
-              className=" text-5xl font-bold sm:text-[2rem]"
+              className="text-center text-5xl font-bold sm:text-[2rem]"
             >
               Hello, I'm Dhakad
             </h2>

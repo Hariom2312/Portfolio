@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-      // toast.success("Welcome to My Portfolio 🥳");
+      toast.success("Welcome to My Portfolio 🥳");
     }, 1000);
     return () => clearTimeout(timer);
   }, []);
