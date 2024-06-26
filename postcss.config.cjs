@@ -1,6 +1,8 @@
+// postcss.config.cjs
 module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-};
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+    // Other plugins as needed
+  ]
+}

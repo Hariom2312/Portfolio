@@ -23,7 +23,7 @@ const Footer = () => {
               href="https://t.me/Hariom2312"
               className="box font-medium text-white   flex items-center justify-center flex-col"
             >
-              <FaTelegramPlane className=" text-black text-3xl hover:scale-125 cursor-pointer rounded-full" />
+              <FaTelegramPlane className="hover:animate-pulse-one text-black text-3xl hover:scale-125 cursor-pointer rounded-full" />
               <p>Telegram</p>
             </a>
             <a
@@ -32,7 +32,7 @@ const Footer = () => {
               href="https://api.whatsapp.com/send/?phone=%2B919301670130&type=phone_number&app_absent=0"
               className="box font-medium text-white  flex items-center justify-center flex-col"
             >
-              <IoLogoWhatsapp className=" text-black text-3xl hover:scale-125 cursor-pointer" />
+              <IoLogoWhatsapp className=" hover:animate-pulse-one text-black text-3xl hover:scale-125 cursor-pointer" />
               <p>WhatsApp</p>
             </a>
             <a
@@ -41,13 +41,13 @@ const Footer = () => {
               href="https://www.instagram.com/om_dhakad_13/"
               className="box font-medium text-white  flex items-center justify-center flex-col"
             >
-              <RiInstagramFill className=" text-black text-3xl hover:scale-125 cursor-pointer" />
+              <RiInstagramFill className="hover:animate-pulse-one text-black text-3xl hover:scale-125 cursor-pointer" />
               <p>Instagram</p>
             </a>
           </div>
           <div className="sm:text-[12px]" data-aos="fade-right">
-            | Copyright &copy; <span>2024 Hariom Bamboriya </span> All rights
-            reserved
+            | Copyright &copy; <span>2024 ❤️ Hariom Bamboriya </span> All rights
+              reserved
             <a href="#"></a> |
           </div>
         </div>
@@ -55,14 +55,14 @@ const Footer = () => {
         <div  data-aos="zoom-in" className="  block sm:hidden text-black text-center w-[40%] text-xl md:text-lg  flex flex-col justify-center items-start">
           <legend className=" w-auto ml-[60%]  font-semibold ">
             <div className="-ml-40 sm:ml-20 flex gap-2">
-              <FiPhoneCall />
+              <FiPhoneCall className="animate-square-fast" />
               <p>+919301670130</p>
             </div>
           </legend>
 
           <legend className="text-center w-auto md:ml-[-15%] font-semibold mx-auto ">
             <div className=" pl-2 flex justify-center items-center gap-2">
-              <MdOutlineEmail />
+              <MdOutlineEmail className=" animate-bounce" />
               <a href="mailto:dhakadhariom007@gmail.com">dhakadhariom007@gmail.com</a>
             </div>
           </legend>

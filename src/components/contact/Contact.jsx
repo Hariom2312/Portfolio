@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div id="contact" className="container m-auto mt-16">
       {/* heading */}
-      <div 
+       <div 
       // data-aos="fade-up"
        className="relative mb-5">
         <h3 className=" text-3xl font-black text-gray-400 sm:text-2xl">
@@ -22,7 +22,7 @@ const Contact = () => {
       </div>
 
       {/* card*/}
-      <div className="card-wrapper w-[90%] sm:w-[100%] mx-auto mt-5 flex items-center justify-center sm:flex-col">
+      <div className="h-[400px] card-wrapper w-[90%] sm:w-[100%] mx-auto mt-5 flex items-center justify-center sm:flex-col">
         <div className="left w-[70%] flex-1 flex items-center justify-center sm:flex-col sm:w-full">
           <div className="flex-3 w-1/2 gap-3 flex items-end justify-end  flex-col sm:w-3/4">
             <div 
@@ -60,12 +60,14 @@ const Contact = () => {
               type="email"
               placeholder="e.g. example@email.com"
               name=""
+              required
             />
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="text"
               placeholder="e.g. John Doe"
               name=""
+              required
             />
             <textarea
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
@@ -76,7 +78,7 @@ const Contact = () => {
               id=""
             />
             <button
-              className="bg-yellow-500 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
+              className= "hover:bg-gray-600 hover:scale-105 duration-500 bg-gray-400 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
             >
               <span>Send</span>
               <RiSendPlaneFill/>

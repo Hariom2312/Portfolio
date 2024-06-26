@@ -1,7 +1,6 @@
 import React from "react";
 import ProgressBar from "../../chip/ProgressBar";
 import SkillBox from "../../chip/SkillBox";
-
 import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
 
 
@@ -12,14 +11,14 @@ import {
   SiExpress,
 } from "react-icons/si";
 import { GrCode } from "react-icons/gr";
-import { SiNextdotjs } from "react-icons/si";
+// import { SiNextdotjs } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 
 const Skills = ({ darkMode }) => {
   return (
     <div id="skills">
-      <div className=" container m-auto  mt-16">
+      <div className=" bg-[url('https://ik.imagekit.io/2lzi3lqgg/bg-image.jpg?updatedAt=1719337920865')] bg-no-repeat bg-cover container m-auto  mt-16">
         {/* heading */}
         <div data-aos="fade-up" className="relative mb-5">
           <h3 className=" text-3xl font-black text-gray-400 sm:text-2xl">
@@ -37,8 +36,7 @@ const Skills = ({ darkMode }) => {
               Here are my skills.
             </p>
             {/* left box */}
-            <div
-              data-aos="zoom-in"
+            <div data-aos="zoom-in"
               className="progress flex items-center h-[100%] justify-end md:justify-center"
             >
               <div className=" flex flex-col gap-6  w-3/4  my-5 md:w-[90%]">
@@ -58,9 +56,11 @@ const Skills = ({ darkMode }) => {
               </div>
             </div>
           </div>
+
+
           {/* right box */}
-          <div className="right relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
-            <div className="first2 flex flex-col gap-10">
+          <div className="animate-square right relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
+            <div className="  first2 flex flex-col gap-10">
               <SkillBox
                 logo={<IoLogoNodejs />}
                 black={"white"}
@@ -74,6 +74,7 @@ const Skills = ({ darkMode }) => {
                 skill={"MongoDB"}
               />
             </div>
+
             <div className="last2 flex flex-col gap-10">
               <SkillBox
                 logo={<SiExpress />}
@@ -100,8 +101,9 @@ const Skills = ({ darkMode }) => {
                 skill={"Next Js"}
               /> */}
             </div>
-          </div>
-        </div>
+         </div>
+
+      </div>
 
         {/* icons */}
         {/* <div

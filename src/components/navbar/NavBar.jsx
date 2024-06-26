@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import HBLogo from "../../assets/HBLogo1.avif";
-import Resume from "../resume/Resume";
+// import Resume from "../resume/Resume";
 
 const navItems = [
   {
@@ -34,18 +34,20 @@ const navItems = [
 
 const NavBar = ({ toggleDarkMode, darkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState("home");
 
   // Toggle the navbar
   const toggleNav = (name) => {
     setIsOpen(!isOpen);
-    setActiveIndex(name === activeIndex ? null : name);
+    setActiveIndex(name);
   };
 
   const [scrollPosition, setScrollPosition] = useState(0);
+  
   useEffect(() => {
     const handleScroll = () => {
       setScrollPosition(window.scrollY);
+      // console.log(window.scrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -54,6 +56,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
 
   return (
     <div
@@ -65,14 +68,15 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
        
         <div data-aos="fade-down" className="logo">
            <Link
-            onClick={() => window.scrollTo(0, 0)}
+            onClick={() => {window.scrollTo(0, 0),setActiveIndex("home")}}
             to="/"
             className="text-3xl font-bold sm:text-3xl flex items-center gap-3"
           >
            <img src={HBLogo} alt="Logo" className="w-[50px] h-[50px] aspect-auto ring-2 ring-slate-700 p-1 mix-blend-hard-light rounded-full hover:rotate-[360deg] duration-200" />
-             Hariom Bamboriya
+            <p className="ml-2 hover:scale-105">Hariom Bamboriya</p> 
           </Link>
         </div>
+        
         <div
           data-aos="fade-down"
           className="nav-items flex items-center space-x-11"
@@ -100,12 +104,12 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             {navItems.map((item) => (
               <li
                 key={item.id}
-                className="md:m-6 md:flex md:gap-6 md:items-center md:justify-center"
+                className=" md:m-6 md:flex md:gap-6 md:items-center md:justify-center hover:scale-110 md:hover:text-yellow-500"
               >
                 <a
                   onClick={() => toggleNav(item.name)}
                   href={`#${item.name}`}
-                  className={`uppercase cursor-pointer text-black hover:text-yellow-600 font-bold ${
+                  className={`uppercase cursor-pointer text-black hover:scale-105 hover:text-yellow-600 font-bold ${
                     item.name === activeIndex ? "text-yellow-600" : ""
                   }`}
                 >

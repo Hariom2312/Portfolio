@@ -13,6 +13,8 @@ const Home = () => {
   function toggleDarkMode() {
     setDarkMode((prevDarkMode) => !prevDarkMode);
   }
+
+
   return (
     <>
       <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />

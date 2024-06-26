@@ -26,6 +26,11 @@ const Reference = ({ darkMode }) => {
               >
                 Here I solved a lot of Coding Problems in C++ with Advance DSA
               </p>
+              <div className="flex flex-row items-center gap-2 justify-center " data-aos="fade-up">
+              <span className="h-[1.1px]   w-[12%] bg-gray-300 block"></span>
+              <p>Visit Once</p>
+              <span className="h-[1.1px] w-[12%] bg-gray-300 block"></span>
+              </div>
               {/* left box */}
               <div
                 data-aos="zoom-in"
@@ -84,7 +89,7 @@ const Reference = ({ darkMode }) => {
 
             {/* right box */}
 
-            <div className=" right relative flex-1 flex flex-wrap p-5 items-center justify-center sm:w-full pt-8 ">
+            <div  data-aos="fade-down" className=" right relative flex-1 flex flex-wrap p-5 items-center justify-center sm:w-full pt-8 ">
               <img
                 src={CodingPic}
                 alt="CodingLogo"
